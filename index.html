@@ -5,49 +5,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Tienda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Yuyu&display=swap"
+        rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
- <nav class="navbar bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="images/tienda.png" alt="Bootstrap" width="30" height="24">
-      <p>Tienda</p>
-    </a>
-  </div>
-</nav>
+    <nav class="navbar bg-body-tertiary">
+        <div class="box-navbar1">
+            <p id="titulo-tienda">Mini Tienda</p>
+        </div>
 
+        <div class="box-navbar2">
+            <a class="navbar-brand" href="#">
+                <img id="logo-tienda" src="images/carro.png" alt="logo_tienda" width="30" height="24">
+                <p id="contador-productos">0</p>
+        </div>
+    </nav>
+    <H1>Productos</H1>
     <div id="contenedor-productos">
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://cdn.pixabay.com/photo/2020/04/04/12/52/drill-5002127_1280.jpg" class="card-img-top"
+                alt="...">
             <div class="card-body">
                 <p class="card-text">Taladro</p>
-                <p class="precio">100000</p>
+                <p class="precio">$ 100.000 COP</p>
+                <button class="btn btn-primary">Agregar</button>
 
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://cdn.nomos-glashuette.com/img/f=scale-down,w=2560,bg=gray,sf=png/webshop/63/4a/53/1743068771/0135_Tangente_2date_1Bn_2d-front-masked_1.jpg"
+                class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Reloj</p>
-                <p class="precio">340000</p>
+                <p class="precio">$ 340.000 COP</p>
+                <button class="btn btn-primary">Agregar</button>
+
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://www.professionalwireless.com.co/wp-content/uploads/2025/02/LOQ-15iRX9-83DVX007US_32GB_A.png"
+                class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Laptop</p>
-                <p class="precio">500000</p>
+                <p class="precio">$ 500.000 COP</p>
+
+                <button class="btn btn-primary">Agregar</button>
             </div>
+
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://audio-technica.com.co/cdn/shop/files/ATH-M20X_1.webp?v=1736954938" class="card-img-top"
+                alt="...">
             <div class="card-body">
                 <p class="card-text">Audifinos</p>
-                <p class="precio">50000</p>
+                <p class="precio">$ 50.000 COP</p>
+                <button class="btn btn-primary">Agregar</button>
 
             </div>
         </div>
@@ -55,6 +75,6 @@
     </div>
 
 </body>
-<script src="script.js"></script>
+<script src="app.js"></script>
 
 </html>
